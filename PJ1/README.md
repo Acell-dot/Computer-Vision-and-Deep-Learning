@@ -35,7 +35,7 @@
 Pemeriksaan dilakukan menggunakan `01_cek_anotasi.py` untuk menjamin integritas data sebelum proses pelatihan:
 - **Kesesuaian Format**: Memastikan setiap baris anotasi memuat tepat 5 atribut: `<class_id> <x_center> <y_center> <width> <height>`.
 - **Normalisasi Koordinat**: Memastikan seluruh nilai koordinat dan ukuran kotak pembatas telah dinormalisasi dalam rentang interval $[0, 1]$.
-- **Validasi Kelas**: Memastikan nilai `class_id` berada pada rentang yang valid ($0 \le \text{class\_id} < 31$) sesuai `classes.txt`.
+- **Validasi Kelas**: Memastikan nilai `class_id` berada pada rentang yang valid (`0 <= class_id < 31` atau indeks 0 sampai 30) sesuai `classes.txt`.
 - **Pengecekan Anomali**: Mendeteksi jika terdapat ukuran kotak ekstrem ($< 8$ px) atau label kosong/hilang.
 - **Verifikasi Visual**: Hasil anotasi digambar ulang (*bounding box overlay*) ke folder `cek_visual/` untuk memastikan secara visual bahwa kotak pembatas tepat membingkai objek target tanpa terpotong.
 - **Integritas Dataset**: Hash SHA-256 label tercatat sebagai `EB643308968D` sebagai bukti integritas data projek mahasiswa.
