@@ -1,0 +1,4 @@
+eksperimen,perubahan,pretrained,mAP50,mAP50-95,precision,recall,inferensi_ms,waktu_latih_menit,imgsz,bobot
+E1_pretrained,-,True,0.9946,0.889,0.9838,0.9885,30.82,115.3,416,/home/adfa-viona/Downloads/YOLO/hasil_praktik/E1_pretrained/weights/best.pt
+E2_scratch,-,False,0.637,0.5363,0.6141,0.5796,30.13,110.38,416,/home/adfa-viona/Downloads/YOLO/hasil_praktik/E2_scratch/weights/best.pt
+E3_tuning,imgsz=640,True,0.995,0.8981,0.9865,0.989,80.43,283.8,640,/home/adfa-viona/Downloads/YOLO/hasil_praktik/E3_tuning/weights/best.pt
